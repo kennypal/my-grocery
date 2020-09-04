@@ -11,15 +11,15 @@ This app will let you list down items to be bought at the supermarket. It will a
 
 DESKTOP
 
-![imageAlt](https://i.imgur.com/tdGzCat.png)
+![imageAlt](https://i.imgur.com/iCstccN.png)
 
 TABLET/MOBILE
 
-![imageAlt](https://i.imgur.com/pfHODNf.png)
+![imageAlt](https://i.imgur.com/ldTjc9W.png)
 
 ## Component Hierarchy
 
-![imageAlt](https://i.imgur.com/j2vW6xv.png)
+![imageAlt](https://i.imgur.com/8Q2fc0O.png)
 
 ## API Sample
 
@@ -41,13 +41,15 @@ TABLET/MOBILE
 #### MVP 
 
 - Logging in the grocery list everytime you go to the supermarket.
-- Reading and updating entries from Airtable.
+- Reading and post entries from Airtable.
 - Highlight the total amount spent.
 - Make the app visually appealing with the use of CSS, Flexbox and Responsive Design
 
 
 #### PostMVP  
 
+- Updating and removing entries from Airtable
+- Creating the entry by item
 - Add a search link to show past grocery lists by category (month, date range)
 - Add detailed information of each item (price, brand)
 
