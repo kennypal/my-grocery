@@ -13,8 +13,7 @@ const Archive = () => {
           'Authorization': `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
         },
       });
-      console.log(response.data.records)
-      // setGroceries(response.data.records)
+      setGroceries(response.data.records)
     }
     apiCall()
   }, []);
