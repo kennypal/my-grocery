@@ -20,6 +20,13 @@ const Archive = () => {
   return (
     <div>
       <h1>Archive</h1>
+      {groceries.map((grocery, idx) => (
+        <div>
+          <h3>{grocery.fields.datepurchase}</h3>
+          <h3 key={grocery.id}>{grocery.fields.list}</h3>
+          
+        </div>
+      ))}
     </div>
   );
 };
