@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Archive from "./Archive";
+import Buttons from "./Buttons"
 import Create from "./Create";
 import { Route, Link } from "react-router-dom";
 
@@ -12,13 +13,8 @@ const Home = () => {
           <h1>Home</h1>
       </Link>
       </header>
-      <Link to="/create">
-        <button>Create List</button>
-      </Link>
-      <Link to="/archive">
-        <button>Archive</button>
-      </Link>
-        <Route path="/create">
+      <Buttons />
+      <Route path="/create">
           <Create />
       </Route>
       <Route path="/archive">
