@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import Form from "./Form"
 
 const Create = (props) => {
   const [list, setList] = useState('');
@@ -32,37 +33,17 @@ const Create = (props) => {
   return (
     <div>
       <h1>Create List</h1>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="list">List:</label>
-        <textarea
-          name="list"
-          type="text"
-          value={list}
-          onChange={(event) => setList(event.target.value)}
-        />
-        <label htmlFor="datePurchase">Date Purchased:</label>
-        <input
-          name="datePurchase"
-          type="text"
-          value={datePurchase}
-          onChange={(event) => setDatePurchase(event.target.value)}
-        />
-        <label htmlFor="store">Store:</label>
-        <input
-          name="store"
-          type="text"
-          value={store}
-          onChange={(event) => setStore(event.target.value)}
-        />
-        <label htmlFor="totalAmount">Total Amount:</label>
-        <input
-          name="totalAmount"
-          type="text"
-          value={totalAmount}
-          onChange={(event) => setTotalAmount(event.target.value)}
-        />
-        <button type="submit">Submit</button>
-      </form>
+      <Form
+        handleSubmit={handleSubmit}
+        list={list}
+        setList={setList}
+        datePurchase={datePurchase}
+        setDatePurchase={setDatePurchase}
+        store={store}
+        setStore={setStore}
+        totalAmount={totalAmount}
+        setTotalAmount={setTotalAmount}
+      />
     </div>
   );
 };
