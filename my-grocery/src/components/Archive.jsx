@@ -24,7 +24,8 @@ const Archive = () => {
         <div>
           <h3>{grocery.fields.datepurchase}</h3>
           <h3 key={grocery.id}>{grocery.fields.list}</h3>
-          
+          <h3>{grocery.fields.store}</h3>
+          <h3>{grocery.fields.totalamount}</h3>
         </div>
       ))}
     </div>
