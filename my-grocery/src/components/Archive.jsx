@@ -25,7 +25,7 @@ const Archive = (props) => {
           <h3 key={idx}>{grocery.fields.datePurchase}</h3>
           <h3 key={idx}>{grocery.fields.list}</h3>
           <h3 key={idx}>{grocery.fields.store}</h3>
-          <h3 key={idx}>{grocery.fields.totalAmount}</h3>
+          <h3 key={idx} style={{ backgroundColor: 'lightblue' }}>${grocery.fields.totalAmount}</h3>
         </div>
       ))}
     </div>
