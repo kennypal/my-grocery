@@ -5,7 +5,7 @@ const Create = (props) => {
   const [list, setList] = useState('');
   const [datePurchase, setDatePurchase] = useState('mm/dd/yyyy');
   const [store, setStore] = useState('');
-  const [totalAmount, setTotalAmount] = useState(0);
+  const [totalAmount, setTotalAmount] = useState('');
   
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -16,21 +16,17 @@ const Create = (props) => {
       totalAmount
     };
 
-    // const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/frylife`;
-    // await axios.post(airtableURL, { fields }, {
-    //   headers: {
-    //     'Authorization': `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
-    //     'Content-Type': 'application/json'
-    //   }
-    // })
     const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/grocery`;
-    const response = await axios.post(airtableURL, { fields }, {
+    await axios.post(airtableURL, { fields }, {
       headers: {
         'Authorization': `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
         'Content-Type': 'application/json'
       }
     })
-    console.log(response)
+    setList('')
+    setDatePurchase('mm/dd/yyyy')
+    setStore('')
+    setTotalAmount('')
   }
 
   return (

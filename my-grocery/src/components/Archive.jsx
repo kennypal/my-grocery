@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios'
 
-const Archive = () => {
+const Archive = (props) => {
   const [groceries, setGroceries] = useState([]);
 
   useEffect(() => {
@@ -22,10 +22,10 @@ const Archive = () => {
       <h1>Archive</h1>
       {groceries.map((grocery, idx) => (
         <div>
-          <h3>{grocery.fields.datepurchase}</h3>
-          <h3 key={grocery.id}>{grocery.fields.list}</h3>
-          <h3>{grocery.fields.store}</h3>
-          <h3>{grocery.fields.totalamount}</h3>
+          <h3 key={idx}>{grocery.fields.datePurchase}</h3>
+          <h3 key={idx}>{grocery.fields.list}</h3>
+          <h3 key={idx}>{grocery.fields.store}</h3>
+          <h3 key={idx}>{grocery.fields.totalAmount}</h3>
         </div>
       ))}
     </div>
