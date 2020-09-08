@@ -5,7 +5,7 @@ const Create = (props) => {
   const [list, setList] = useState('');
   const [datePurchase, setDatePurchase] = useState('mm/dd/yyyy');
   const [store, setStore] = useState('');
-  const [totalAmount, setTotalAmount] = useState('');
+  const [totalAmount, setTotalAmount] = useState(0);
   
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -16,10 +16,18 @@ const Create = (props) => {
       totalAmount
     };
 
+    // const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/frylife`;
+    // await axios.post(airtableURL, { fields }, {
+    //   headers: {
+    //     'Authorization': `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
+    //     'Content-Type': 'application/json'
+    //   }
+    // })
     const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/grocery`;
     const response = await axios.post(airtableURL, { fields }, {
       headers: {
-        'Authorization': `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`
+        'Authorization': `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
+        'Content-Type': 'application/json'
       }
     })
     console.log(response)
@@ -36,9 +44,9 @@ const Create = (props) => {
           value={list}
           onChange={(event) => setList(event.target.value)}
         />
-        <label htmlFor="datepurchase">Date Purchased:</label>
+        <label htmlFor="datePurchase">Date Purchased:</label>
         <input
-          name="datepurchase"
+          name="datePurchase"
           type="text"
           value={datePurchase}
           onChange={(event) => setDatePurchase(event.target.value)}
@@ -50,9 +58,9 @@ const Create = (props) => {
           value={store}
           onChange={(event) => setStore(event.target.value)}
         />
-        <label htmlFor="totalamount">Total Amount:</label>
+        <label htmlFor="totalAmount">Total Amount:</label>
         <input
-          name="totalamount"
+          name="totalAmount"
           type="text"
           value={totalAmount}
           onChange={(event) => setTotalAmount(event.target.value)}
