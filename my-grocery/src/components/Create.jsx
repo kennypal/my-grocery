@@ -1,14 +1,34 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 
 const Create = (props) => {
   const [list, setList] = useState('');
   const [datePurchase, setDatePurchase] = useState('mm/dd/yyyy');
   const [store, setStore] = useState('');
   const [totalAmount, setTotalAmount] = useState('');
+  
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const fields = {
+      list,
+      datePurchase,
+      store,
+      totalAmount
+    };
+
+    const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/grocery`;
+    const response = await axios.post(airtableURL, { fields }, {
+      headers: {
+        'Authorization': `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`
+      }
+    })
+    console.log(response)
+  }
+
   return (
     <div>
       <h1>Create List</h1>
-      <form>
+      <form onSubmit={handleSubmit}>
         <label htmlFor="list">List:</label>
         <textarea
           name="list"
