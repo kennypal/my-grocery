@@ -8,11 +8,11 @@ const Home = () => {
   // const [fetchList, setFetchList] = useState(false);
   return (
     <div>
-      <header>
       <Link to="/">
-          <h1>Home</h1>
+        <div className="header">
+          <img src="https://i.imgur.com/0OBawMh.jpg"></img>
+        </div>
       </Link>
-      </header>
       <Route exact path="/">
         <Buttons />
       </Route>
