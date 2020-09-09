@@ -13,7 +13,9 @@ const Home = () => {
           <h1>Home</h1>
       </Link>
       </header>
-      <Buttons />
+      <Route exact path="/">
+        <Buttons />
+      </Route>
       <Route path="/create">
           <Create />
       </Route>
