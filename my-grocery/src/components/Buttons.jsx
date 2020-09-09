@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Buttons = () => {
   return (
-    <div>
+    <div className="buttons">
       <Link to="/create">
         <button>Create List</button>
       </Link>
