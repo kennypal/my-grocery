@@ -33,11 +33,11 @@ textarea {
   height: 150px
 }
 
-.app {
+/* .app {
   width: 100%;
-}
+} */
 
-.home, .archive {
+.app, .archive, .home {
   width: 100%;
 }
 
@@ -106,4 +106,21 @@ textarea {
 
 .item-list {
   padding: 100px 0 0 50px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  textarea {
+    width: 150px
+  }
+  .buttons {
+    display: flex;
+  }
+
+  .home-button {
+    margin: 10px
+  }
+
+  .footer {
+    height: 200px;
+  }
 }
