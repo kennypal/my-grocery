@@ -4,6 +4,14 @@ body {
   background-color: rgb(207, 232, 228)
 }
 
+button {
+  background-color: rgb(172, 216, 219);
+  border: none;
+  border-radius: 12px;
+  width: 30vw;
+  height: 10vh
+}
+
 img {
   max-width: 100%;
   max-height: 100%
@@ -15,6 +23,11 @@ h3 {
 
 span {
   background-color: lightblue;
+}
+
+textarea {
+  width: 300px;
+  height: 150px
 }
 
 .buttons {
@@ -31,7 +44,8 @@ span {
 
 .list-container {
   display: flex;
-  flex-wrap: wrap
+  flex-wrap: wrap;
+  justify-content: space-evenly
 }
 
 /* input, textarea {
@@ -44,9 +58,15 @@ span {
 }
 
 .footer {
-  position: fixed;
+  position: absolute;
   width: 100%;
-  height: 40vh;
-  background-image: url(https://i.imgur.com/bNJXOFY.jpg);
+  height: 45vh;
+  background-image: url(https://i.imgur.com/YAZI2pQ.jpg);
   background-size: 100% 100%;
+}
+
+.list {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 5px white;
 }

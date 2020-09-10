@@ -40,6 +40,7 @@ const Form = (props) => {
             onChange={(event) => props.setTotalAmount(event.target.value)}
           />
         </div>
+        <br />
         <button type="submit">Submit</button>
       </form>
     </div>
