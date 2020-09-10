@@ -32,7 +32,7 @@ const Create = (props) => {
 
   return (
     <div>
-      <h1>Create List</h1>
+      <h1>My List</h1>
       <Form
         handleSubmit={handleSubmit}
         list={list}
