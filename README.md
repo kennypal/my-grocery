@@ -13,9 +13,13 @@ DESKTOP
 
 ![imageAlt](https://i.imgur.com/iCstccN.png)
 
-TABLET/MOBILE
+TABLET
 
 ![imageAlt](https://i.imgur.com/ldTjc9W.png)
+
+MOBILE
+
+![imageAlt](https://i.imgur.com/6gjQwuE.png)
 
 ## Component Hierarchy
 
@@ -74,3 +78,7 @@ TABLET/MOBILE
 
 - Internet connection problems
 - Unpredictable events (storms)
+
+## Change Log
+
+- Added a wireframe for mobile
