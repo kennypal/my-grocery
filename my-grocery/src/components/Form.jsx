@@ -41,7 +41,7 @@ const Form = (props) => {
           />
         </div>
         <br />
-        <button type="submit">Submit</button>
+        <button type="submit" className="form-submit">Submit</button>
       </form>
     </div>
   );
