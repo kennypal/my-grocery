@@ -7,7 +7,7 @@ import { Route, Link } from "react-router-dom";
 const Home = () => {
   return (
     <>
-      <div>
+      <div className="home">
         <Link to="/">
           <div className="header">
             <img src="https://i.imgur.com/0OBawMh.jpg" alt="header"></img>

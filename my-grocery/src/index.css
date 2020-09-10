@@ -11,8 +11,8 @@ button {
   background-color: rgb(172, 216, 219);
   border: none;
   border-radius: 12px;
-  width: 30vw;
-  height: 10vh
+  width: 432px;
+  height: 70.8px
 }
 
 img {
@@ -32,6 +32,18 @@ textarea {
   width: 300px;
   height: 150px
 }
+
+.app {
+  width: 100vw;
+}
+
+.home, .archive {
+  width: 100%;
+}
+
+/* .archive {
+  width: 100%;
+} */
 
 .background {
   background-image: url(https://i.imgur.com/RjvtXBV.png);
@@ -54,7 +66,8 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 20px
+  padding: 20px;
+  width: 100%;
 }
 
 /* input, textarea {
@@ -69,19 +82,23 @@ textarea {
 .footer {
   position: absolute;
   width: 100%;
-  height: 45vh;
+  height: 318.6px;
   background-image: url(https://i.imgur.com/YAZI2pQ.jpg);
   background-size: 100% 100%;
 }
 
 .list {
-  width: 32vw;
-  height: 60vh
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  width: 460.8px;
+  height: 424.8px
 }
 
 .form-submit {
-  width: 10vw;
-  height: 5vh
+  width: 144px;
+  height: 35.4px
 }
 
 .home-button {

@@ -18,14 +18,15 @@ const Archive = (props) => {
     apiCall()
   }, []);
   return (
-    <div>
+    <div className="archive">
       <h1>Archive</h1>
       <div className="list-container">
         {groceries.map((grocery, idx) => (
           <div className="background">
             <div className="list" key={idx}>
               <h3>{grocery.fields.datePurchase}</h3>
-              <h3>{grocery.fields.list}</h3>
+              <h3>{(grocery.fields.list.split("\n").map(item => (<div>{item}</div>)))}</h3>
+              
               <h3>{grocery.fields.store}</h3>
               <h3>Total Amount: <span>${grocery.fields.totalAmount}</span></h3>
             </div>
