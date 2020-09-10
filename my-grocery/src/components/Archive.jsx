@@ -21,12 +21,12 @@ const Archive = (props) => {
     <div>
       <h1>Archive</h1>
       <div className="list-container">
-      {groceries.map((grocery, idx) => (
-          <div className="list">
-            <h3 key={idx}>{grocery.fields.datePurchase}</h3>
-            <h3 key={idx}>{grocery.fields.list}</h3>
-            <h3 key={idx}>{grocery.fields.store}</h3>
-            <h3 key={idx} style={{ backgroundColor: 'lightblue' }}>${grocery.fields.totalAmount}</h3>
+        {groceries.map((grocery, idx) => (
+          <div className="list" key={idx}>
+            <h3>{grocery.fields.datePurchase}</h3>
+            <h3>{grocery.fields.list}</h3>
+            <h3>{grocery.fields.store}</h3>
+            <h3>Total Amount: <span>${grocery.fields.totalAmount}</span></h3>
           </div>
       ))}
       </div>

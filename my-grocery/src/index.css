@@ -12,6 +12,10 @@ h3 {
   width: 200px
 }
 
+span {
+  background-color: lightblue;
+}
+
 .buttons {
   display: flex;
   flex-wrap: wrap;
