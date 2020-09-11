@@ -8,6 +8,8 @@ const Create = (props) => {
   const [store, setStore] = useState('');
   const [totalAmount, setTotalAmount] = useState('');
   
+  // This function prevents the page to reload and capture data from user's input
+
   const handleSubmit = async (event) => {
     event.preventDefault();
     const fields = {
@@ -17,6 +19,8 @@ const Create = (props) => {
       totalAmount
     };
 
+    // After capturing the data, it will make an axios call to post data in Airtable.
+
     const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/grocery`;
     await axios.post(airtableURL, { fields }, {
       headers: {
@@ -24,6 +28,9 @@ const Create = (props) => {
         'Content-Type': 'application/json'
       }
     })
+
+    // After the call, the function will set values to default
+    
     setList('')
     setDatePurchase('mm/dd/yyyy')
     setStore('')
