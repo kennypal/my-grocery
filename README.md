@@ -11,7 +11,7 @@ This app will let you list down items to be bought at the supermarket. It will a
 
 DESKTOP
 
-![imageAlt](https://i.imgur.com/iCstccN.png)
+![imageAlt](https://i.imgur.com/IJ6Kfqf.png)
 
 TABLET
 
