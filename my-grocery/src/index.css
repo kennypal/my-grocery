@@ -135,8 +135,13 @@ h2, h3, .item {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 979px) {
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
   textarea {
-    width: 150px
+    width: 250px
   }
   .buttons {
     display: flex;
@@ -148,6 +153,10 @@ h2, h3, .item {
 
   .footer {
     height: 165px;
+  }
+
+  .form-submit {
+    align-self: center;
   }
 }
 
