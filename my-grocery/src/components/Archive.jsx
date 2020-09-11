@@ -16,6 +16,9 @@ const Archive = (props) => {
     };
     apiCall();
   }, []);
+
+  groceries.sort((a, b) => new Date(b.fields.datePurchase) - new Date(a.fields.datePurchase))
+  
   return (
     <div className="archive">
       <h1>Archive</h1>
@@ -25,11 +28,9 @@ const Archive = (props) => {
             <div className="list">
               <div className="item-list">
                 <h3>{grocery.fields.datePurchase}</h3>
-                <h3>
                   {grocery.fields.list.split("\n").map((item, idx) => (
-                    <div key={idx}>{item}</div>
+                    <div className="item" key={idx}>{item}</div>
                   ))}
-                </h3>
                 <h3>{grocery.fields.store}</h3>
                 <h3>
                   Total Amount: <span>${grocery.fields.totalAmount}</span>

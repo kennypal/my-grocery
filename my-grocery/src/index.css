@@ -1,6 +1,8 @@
 * {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Rubik', sans-serif;
+  color: rgb(255, 255, 255);
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -20,17 +22,40 @@ img {
   max-height: 100%
 }
 
-h3 {
-  /* width: 200px */
+input, textarea {
+  border: none;
+  border-radius: 12px;
+}
+
+input, h3, .item {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+}
+
+h1 {
+  color: rgb(172, 186, 104);
+  font-size: 100px
+}
+
+h1, form {
+  text-align: center;
+}
+
+label {
+  color: rgb(172, 186, 104);
+  padding: 0 10px 0 0;
+  font-size: 30px
 }
 
 span {
+  color: rgb(0, 0, 0);
   background-color: lightblue;
 }
 
 textarea {
   width: 300px;
-  height: 150px
+  height: 150px;
+  color: rgb(0, 0, 0);
 }
 
 /* .app {
@@ -75,7 +100,7 @@ textarea {
 
 .input {
   display: inline-flex;
-  padding: 5px
+  padding: 25px
 }
 
 .footer {
@@ -97,11 +122,12 @@ textarea {
 
 .form-submit {
   width: 144px;
-  height: 35.4px
+  height: 35.4px;
+  font-size: 20px
 }
 
 .home-button {
-  font-size: 35px
+  font-size: 50px;
 }
 
 .item-list {
@@ -121,6 +147,21 @@ textarea {
   }
 
   .footer {
-    height: 200px;
+    height: 165px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .home-button {
+    margin: 10px;
+    width: 300px
+  }
+
+  .footer {
+    height: 165px;
+  }
+
+  .list {
+    width: 350px
   }
 }
