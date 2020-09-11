@@ -56,17 +56,9 @@ textarea {
   color: rgb(0, 0, 0);
 }
 
-/* .app {
-  width: 100%;
-} */
-
 .app, .archive, .home {
   width: 100%;
 }
-
-/* .archive {
-  width: 100%;
-} */
 
 .background {
   background-image: url(https://i.imgur.com/RjvtXBV.png);
@@ -79,22 +71,12 @@ textarea {
   justify-content: space-evenly
 }
 
-/* .form-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row
-} */
-
 .list-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   width: 100%;
 }
-
-/* input, textarea {
-  width: 100px
-} */
 
 .input {
   display: inline-flex;
