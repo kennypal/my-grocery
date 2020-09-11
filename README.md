@@ -19,7 +19,7 @@ TABLET
 
 MOBILE
 
-![imageAlt](https://i.imgur.com/6gjQwuE.png)
+![imageAlt](https://i.imgur.com/hPV2PKb.png)
 
 ## Component Hierarchy
 
