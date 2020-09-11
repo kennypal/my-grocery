@@ -15,7 +15,7 @@ DESKTOP
 
 TABLET
 
-![imageAlt](https://i.imgur.com/ldTjc9W.png)
+![imageAlt](https://i.imgur.com/SnrbWIp.png)
 
 MOBILE
 
