@@ -11,19 +11,19 @@ This app will let you list down items to be bought at the supermarket. It will a
 
 DESKTOP
 
-![imageAlt](https://i.imgur.com/iCstccN.png)
+![imageAlt](https://i.imgur.com/IJ6Kfqf.png)
 
 TABLET
 
-![imageAlt](https://i.imgur.com/ldTjc9W.png)
+![imageAlt](https://i.imgur.com/jsA39GG.png)
 
 MOBILE
 
-![imageAlt](https://i.imgur.com/6gjQwuE.png)
+![imageAlt](https://i.imgur.com/hPV2PKb.png)
 
 ## Component Hierarchy
 
-![imageAlt](https://i.imgur.com/8Q2fc0O.png)
+![imageAlt](https://i.imgur.com/oJIl9D0.png)
 
 ## API Sample
 
@@ -46,7 +46,6 @@ MOBILE
 
 - Logging in the grocery list everytime you go to the supermarket.
 - Reading and post entries from Airtable.
-- Highlight the total amount spent.
 - Make the app visually appealing with the use of CSS, Flexbox and Responsive Design
 
 
@@ -82,3 +81,5 @@ MOBILE
 ## Change Log
 
 - Added a wireframe for mobile
+- Updated wireframes for desktop, mobile and desktop
+- Updated component hierarchy
