@@ -25,9 +25,6 @@ img {
 input, textarea {
   border: none;
   border-radius: 12px;
-}
-
-input, h3, .item {
   color: rgb(0, 0, 0);
   font-size: 18px;
 }
@@ -41,15 +38,14 @@ h1, form {
   text-align: center;
 }
 
+h2 {
+  color: rgb(0, 0, 0)
+}
+
 label {
   color: rgb(172, 186, 104);
   padding: 0 10px 0 0;
   font-size: 30px
-}
-
-span {
-  color: rgb(0, 0, 0);
-  background-color: lightblue;
 }
 
 textarea {
@@ -132,6 +128,10 @@ textarea {
 
 .item-list {
   padding: 100px 0 0 50px;
+}
+
+h2, h3, .item {
+  color: rgb(172, 186, 104);
 }
 
 @media only screen and (min-width: 768px) and (max-width: 979px) {
